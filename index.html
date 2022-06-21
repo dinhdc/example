@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
   </head>
 
   <body>
@@ -28,7 +28,7 @@
       <div id="content">
         <div id="header">
           <div class="logo-wrapper">
-            <img src="./logoNCC 1.png" class="logo-image" alt="" />
+            <img src="./images/logoNCC.png" class="logo-image" alt="" />
           </div>
         </div>
         <div id="banner">
@@ -45,8 +45,80 @@
             odio neque, sed semper turpis pellentesque a.
           </p>
         </div>
-        <div id="posts"></div>
+        <div id="posts">
+          <div class="post">
+            <p class="post-title">Lorem ipsum dolor sit amet</p>
+            <div class="post-body">
+              <p>
+                <img
+                  src="/images/css-icon.png"
+                  width="128"
+                  height="128"
+                  style="float: left; margin-right: 16px"
+                />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
+                dui sodales, faucibus libero ut, posuere felis. Donec imperdiet
+                suscipit accumsan. Aenean consequat condimentum velit ut tempor.
+                Nam porta massa in metus bibendum congue. Pellentesque ultrices
+                liquam egestas nunc at ullamcorper ultricies. Donec feugiat
+                velit nulla, vel sodales est ullamcorper id. Aenean consequat
+                condimentum velit ut tempor. Nam porta massa in metus bibendum
+                congue. Pellentesque ultrices vestibulum mattis.
+              </p>
+            </div>
+          </div>
+          <div class="post">
+            <p class="post-title">Lorem ipsum dolor sit amet</p>
+            <div class="post-body">
+              <p>
+                <img
+                  src="/images/html-icon.png"
+                  width="128"
+                  height="128"
+                  style="float: left; margin-right: 16px"
+                />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
+                dui sodales, faucibus libero ut, posuere felis. Donec imperdiet
+                suscipit accumsan. Aenean consequat condimentum velit ut tempor.
+                Nam porta massa in metus bibendum congue. Pellentesque ultrices
+                liquam egestas nunc at ullamcorper ultricies. Donec feugiat
+                velit nulla, vel sodales est ullamcorper id. Aenean consequat
+                condimentum velit ut tempor. Nam porta massa in metus bibendum
+                congue. Pellentesque ultrices vestibulum mattis.
+              </p>
+            </div>
+          </div>
+          <div class="post">
+            <p class="post-title">Lorem ipsum dolor sit amet</p>
+            <div class="post-body">
+              <p>
+                <img
+                  src="/images/url-icon.png"
+                  width="128"
+                  height="128"
+                  style="float: left; margin-right: 16px"
+                />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
+                dui sodales, faucibus libero ut, posuere felis. Donec imperdiet
+                suscipit accumsan. Aenean consequat condimentum velit ut tempor.
+                Nam porta massa in metus bibendum congue. Pellentesque ultrices
+                liquam egestas nunc at ullamcorper ultricies. Donec feugiat
+                velit nulla, vel sodales est ullamcorper id. Aenean consequat
+                condimentum velit ut tempor. Nam porta massa in metus bibendum
+                congue. Pellentesque ultrices vestibulum mattis.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="footer">
+          <p>Copyright © <span id="year"></span></p>
+        </div>
       </div>
     </div>
   </body>
+  <script>
+    let currentYear = new Date().getFullYear();
+    let spanTag = document.querySelector("span#year");
+    spanTag.innerHTML = currentYear;
+  </script>
 </html>
